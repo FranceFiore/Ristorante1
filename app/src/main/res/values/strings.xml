@@ -15,4 +15,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="figlio">Figlio</string>
     <string name="inizia_ad_ordinare">Inizia ad ordinare</string>
+    <string name="ordina">clicca qui per ordinare</string>
+    <string name="seleziona_la_lingua">Seleziona la lingua</string>
 </resources>

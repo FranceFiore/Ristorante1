@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
 
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -32,6 +33,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         inizia.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_menuFragment) }
+        italiano.setOnClickListener{
+
+        }
+        inglese.setOnClickListener{
+        }
     }
 
 
