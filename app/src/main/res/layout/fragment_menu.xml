@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MenuFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+            android:text="@string/aiuto"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/aiuto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/paga"
+            android:drawableStart="@mipmap/dolci"
+            app:layout_constraintTop_toTopOf="parent" android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAlignment="center"
+            android:textAllCaps="false" android:fontFamily="sans-serif" android:typeface="sans"/>
+    <Button
+            android:text="@string/paga"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/paga"
+            app:layout_constraintStart_toEndOf="@+id/aiuto" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/invia" android:drawableStart="@mipmap/euro"
+            app:layout_constraintTop_toTopOf="parent" android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAllCaps="false"
+            android:textAlignment="center" android:fontFamily="sans-serif" android:typeface="sans"/>
+    <Button
+            android:text="@string/invia"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/invia"
+            app:layout_constraintStart_toEndOf="@+id/paga"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:drawableStart="@android:drawable/ic_media_play"
+            app:layout_constraintTop_toTopOf="parent" android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAlignment="center"
+            android:textAllCaps="false" android:fontFamily="sans-serif" android:typeface="sans"/>
+
+    <Button
+            android:text="@string/primi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/primi"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAlignment="center"
+            android:textAllCaps="false"
+            android:drawableTop="@mipmap/primi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/secondi"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/aiuto"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintHorizontal_chainStyle="packed" android:fontFamily="sans-serif"
+            android:typeface="sans"/>
+    <Button
+            android:text="@string/secondi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondi"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableTop="@mipmap/secondi"
+            app:layout_constraintStart_toEndOf="@+id/primi" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/pizze" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/paga"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            android:fontFamily="sans-serif" android:typeface="sans"/>
+    <Button
+            android:text="@string/pizze"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pizze"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAlignment="center"
+            android:textAllCaps="false"
+            android:drawableTop="@mipmap/pizze"
+            app:layout_constraintStart_toEndOf="@+id/secondi"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/dolci"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/paga"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            android:fontFamily="sans-serif" android:typeface="sans"/>
+    <Button
+            android:text="@string/dolci"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dolci"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableTop="@mipmap/dolci"
+            app:layout_constraintStart_toEndOf="@+id/pizze" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/bibite" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/invia"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            android:fontFamily="sans-serif" android:typeface="sans"/>
+    <Button
+            android:text="@string/bibite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bibite"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary" android:textAlignment="center"
+            android:textAllCaps="false"
+            android:drawableTop="@mipmap/bibite"
+            app:layout_constraintStart_toEndOf="@+id/dolci"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/invia"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            android:fontFamily="sans-serif" android:typeface="sans"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="116dp"
+            app:layout_constraintTop_toBottomOf="@+id/paga" android:textSize="24sp"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.343"/>
+
+
+</android.support.constraint.ConstraintLayout>

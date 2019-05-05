@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment" android:name="com.example.ristorante.HomeFragment"
+              android:label="fragment_home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_homeFragment_to_menuFragment" app:destination="@id/menuFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/menuFragment" android:name="com.example.ristorante.MenuFragment"
+              android:label="fragment_menu" tools:layout="@layout/fragment_menu">
+        <action android:id="@+id/action_menuFragment_to_pagaFragment" app:destination="@id/pagaFragment"/>
+        <action android:id="@+id/action_menuFragment_to_inviaFragment" app:destination="@id/inviaFragment"/>
+        <action android:id="@+id/action_menuFragment_self" app:destination="@id/menuFragment"/>
+    </fragment>
+    <fragment android:id="@+id/pagaFragment" android:name="com.example.ristorante.PagaFragment"
+              android:label="fragment_paga" tools:layout="@layout/fragment_paga">
+        <action android:id="@+id/action_pagaFragment_to_menuFragment2" app:destination="@id/menuFragment"/>
+    </fragment>
+    <fragment android:id="@+id/inviaFragment" android:name="com.example.ristorante.InviaFragment"
+              android:label="fragment_invia" tools:layout="@layout/fragment_invia">
+        <action android:id="@+id/action_inviaFragment_to_menuFragment" app:destination="@id/menuFragment"/>
+    </fragment>
+</navigation>
