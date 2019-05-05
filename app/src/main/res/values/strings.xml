@@ -17,4 +17,10 @@
     <string name="inizia_ad_ordinare">Inizia ad ordinare</string>
     <string name="ordina">clicca qui per ordinare</string>
     <string name="seleziona_la_lingua">Seleziona la lingua</string>
+    <string name="fragment_invio_ordini">Fragment invio ordini</string>
+    <string name="fragment_pagamento">Fragment pagamento</string>
+    <string name="quantita">Quantita</string>
+    <string name="prezzo">Prezzo €</string>
+    <string name="descrizione">Descrizione</string>
+    <string name="nome">Nome</string>
 </resources>
